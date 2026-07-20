@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  https://developer.global.id/ + https://github.com/globalid/issuer-toolkit +
+  https://github.com/globalid/dev-tooling-examples + npm globalid-connect-sdk /
+  globalid-hydra-helper
+docs: https://developer.global.id/
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode, clientCredentials]
+  authorization_server: Ory Hydra (globalid-hydra-helper)
+  credential_source: >-
+    Developer apps created in the GlobaliD developer portal issue a client ID and
+    client secret. There is no self-serve public spec — developer portal access is
+    invitation-based (contact required).
+schemes:
+  - name: GlobaliD Connect ("Sign in with GlobaliD")
+    type: oauth2
+    flow: authorizationCode
+    description: >-
+      OAuth2 authorization-code login that lets a relying party authenticate a user
+      with their GlobaliD identity and request identity/verifiable-credential claims.
+    sdk: globalid-connect-sdk
+    evidence: https://github.com/globalid/dev-tooling-examples
+  - name: Developer App credentials (issuer/verifier)
+    type: oauth2
+    flow: clientCredentials
+    description: >-
+      Server-side toolkits (GidIssuerClient / verifier client) authenticate with a
+      developer-app client ID + client secret to issue and verify credentials.
+    sdks: ["@globalid/issuer-toolkit", "@globalid/verifier-toolkit"]
+    evidence: https://github.com/globalid/issuer-toolkit

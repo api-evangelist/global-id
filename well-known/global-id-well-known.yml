@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+host: https://global.id
+notes: >-
+  All /.well-known/ probes on global.id and developer.global.id returned HTTP 403
+  (Cloudflare bot challenge), not a definitive 200 or 404. No discovery document
+  was retrievable; none saved. developer.global.id root returns 200 but is
+  invitation-gated.
+documents:
+  - path: /.well-known/security.txt
+    host: https://global.id
+    status: 403
+  - path: /.well-known/openid-configuration
+    host: https://global.id
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    host: https://global.id
+    status: 403
+  - path: /.well-known/api-catalog
+    host: https://global.id
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    host: https://global.id
+    status: 403
+  - path: /.well-known/security.txt
+    host: https://developer.global.id
+    status: 403

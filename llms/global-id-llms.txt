@@ -1,0 +1,25 @@
+# GlobaliD
+
+> GlobaliD is a decentralized digital-identity platform. It lets people create a portable, self-sovereign identity and lets developers add "Sign in with GlobaliD", issue verifiable credentials, and verify identity claims (e.g. age 18+) through issuer/verifier toolkits built on Hyperledger Aries. Access to the developer portal is invitation-based. Surfaced in the API Evangelist network as a portfolio company of 500 Global.
+
+## Company
+- Website: https://global.id
+- Developer portal (invite-only): https://developer.global.id/
+- GitHub organization: https://github.com/globalid
+
+## Authentication
+- OAuth2. "Sign in with GlobaliD" uses the authorization-code flow (globalid-connect-sdk). Server-side issuer/verifier toolkits authenticate with a developer-app client ID + client secret (Ory Hydra authorization server).
+- Auth profile: authentication/global-id-authentication.yml
+
+## SDKs / Packages
+- @globalid/issuer-toolkit — https://www.npmjs.com/package/@globalid/issuer-toolkit
+- @globalid/verifier-toolkit — https://www.npmjs.com/package/@globalid/verifier-toolkit
+- @globalid/api-client — https://www.npmjs.com/package/@globalid/api-client
+- globalid-connect-sdk — https://www.npmjs.com/package/globalid-connect-sdk
+- Full package index: packages/global-id-packages.yml
+
+## Examples
+- Developer tooling examples (Connect login + verifier 18+ flow): https://github.com/globalid/dev-tooling-examples
+
+## Security
+- Domain security probe: security/global-id-domain-security.yml

@@ -1,7 +1,27 @@
 aid: global-id
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/global-id.png
 name: Global ID
-description: Global ID is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  GlobaliD (global.id) is a decentralized digital-identity platform that lets
+  people create a portable, self-sovereign identity and lets developers add
+  "Sign in with GlobaliD" login, issue verifiable credentials, and verify
+  identity claims (such as proof of being 18+) through server-side issuer and
+  verifier toolkits built on Hyperledger Aries. Developers create apps in the
+  invitation-based developer portal to obtain OAuth2 client credentials, then
+  integrate using the official @globalid npm SDKs. Surfaced in the API
+  Evangelist network as a portfolio company of 500 Global.
 url: https://raw.githubusercontent.com/api-evangelist/global-id/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Identity
+- Digital Identity
+- Decentralized Identity
+- Self-Sovereign Identity
+- Verifiable Credentials
+- Authentication
+- OAuth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://global.id
+- type: DeveloperPortal
+  url: https://developer.global.id/
+- type: GitHubOrganization
+  url: https://github.com/globalid
+- type: Authentication
+  url: authentication/global-id-authentication.yml
+- type: Packages
+  url: packages/global-id-packages.yml
+- type: SDKs
+  url: packages/global-id-packages.yml
+- type: WellKnown
+  url: well-known/global-id-well-known.yml
+- type: DomainSecurity
+  url: security/global-id-domain-security.yml
+- type: LLMsTxt
+  url: llms/global-id-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,77 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.npmjs.com/org/globalid + https://github.com/globalid
+notes: >-
+  First-party GlobaliD client libraries. The `@globalid/*` scoped packages and the
+  `globalid-*` packages published from gitlab.com/globalid are official. Several
+  source repos were archived on 2026-04-02 (read-only) but the published packages
+  remain available on npm.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@globalid/issuer-toolkit"
+    version: 1.4.1
+    url: https://www.npmjs.com/package/@globalid/issuer-toolkit
+    repo: https://github.com/globalid/issuer-toolkit
+    install: npm install @globalid/issuer-toolkit
+    description: Library for credential issuers integrated with GlobaliD (GidIssuerClient).
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@globalid/verifier-toolkit"
+    version: 1.1.0
+    url: https://www.npmjs.com/package/@globalid/verifier-toolkit
+    repo: https://github.com/globalid/verifier-toolkit
+    install: npm install @globalid/verifier-toolkit
+    description: Library for verifiers integrated with GlobaliD.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@globalid/api-client"
+    version: 0.2.0
+    url: https://www.npmjs.com/package/@globalid/api-client
+    install: npm install @globalid/api-client
+    description: Client library for communicating with GlobaliD's API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@globalid/qrcode"
+    version: 0.0.8
+    url: https://www.npmjs.com/package/@globalid/qrcode
+    install: npm install @globalid/qrcode
+    description: GlobaliD QR code component.
+    official: true
+  - language: javascript
+    registry: npm
+    name: globalid-connect-sdk
+    version: 0.2.36-alpha2
+    url: https://www.npmjs.com/package/globalid-connect-sdk
+    repo: https://gitlab.com/globalid/web/globalid-connect-sdk
+    install: npm install globalid-connect-sdk
+    description: GlobaliD Connect SDK ("Sign in with GlobaliD" OAuth flow).
+    official: true
+  - language: javascript
+    registry: npm
+    name: globalid-attestation-sdk
+    version: 1.0.7
+    url: https://www.npmjs.com/package/globalid-attestation-sdk
+    install: npm install globalid-attestation-sdk
+    description: Generate cryptographic material and verify attestations from GlobaliD.
+    official: true
+  - language: javascript
+    registry: npm
+    name: globalid-crypto-library
+    version: 5.4.2
+    url: https://www.npmjs.com/package/globalid-crypto-library
+    install: npm install globalid-crypto-library
+    description: Crypto functionality for the GlobaliD platform (Node.js).
+    official: true
+  - language: javascript
+    registry: npm
+    name: globalid-react-ui
+    version: 0.0.15
+    url: https://www.npmjs.com/package/globalid-react-ui
+    repo: https://gitlab.com/globalid/web/globalid-react-ui
+    install: npm install globalid-react-ui
+    description: GlobaliD React UI component library.
+    official: true
